@@ -1,13 +1,16 @@
 import "@/styles/globals.css";
-import { Metadata, Viewport } from "next";
 import { Link } from "@nextui-org/link";
 import clsx from "clsx";
+import { Metadata, Viewport } from "next";
+import { Open_Sans } from "next/font/google";
 
 import { Providers } from "./providers";
 
-import { siteConfig } from "@/config/site";
-import { fontSans } from "@/config/fonts";
 import { Navbar } from "@/components/navbar";
+import { fontSans } from "@/config/fonts";
+import { siteConfig } from "@/config/site";
+
+export const openSans = Open_Sans({ subsets: ["hebrew"], display: "swap" });
 
 export const metadata: Metadata = {
   title: {
@@ -37,7 +40,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          "min-h-screen bg-background font-sans antialiased",
+          `min-h-screen bg-background ${openSans.className} antialiased`,
           fontSans.variable,
         )}
       >
