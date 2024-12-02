@@ -5,65 +5,44 @@ export const siteConfig = {
   description: "Make beautiful websites regardless of your design experience.",
   navItems: [
     {
-      label: "Home",
+      label: "בית",
       href: "/",
     },
     {
-      label: "Docs",
-      href: "/docs",
+      label: "קצת עלינו",
+      href: "/about-us",
     },
     {
-      label: "Pricing",
+      label: "שיעורים",
+      href: "/classes",
+    },
+    {
+      label: "מחירים",
       href: "/pricing",
     },
     {
-      label: "Blog",
-      href: "/blog",
+      label: "מתאמנות מספרות",
+      href: "/testimonials",
     },
     {
-      label: "About",
-      href: "/about",
-    },
-  ],
-  navMenuItems: [
-    {
-      label: "Profile",
-      href: "/profile",
+      label: "צרו קשר",
+      href: "/contact-us",
     },
     {
-      label: "Dashboard",
-      href: "/dashboard",
+      label: "שאלות נפוצות",
+      href: "/faqs",
     },
     {
-      label: "Projects",
-      href: "/projects",
-    },
-    {
-      label: "Team",
-      href: "/team",
-    },
-    {
-      label: "Calendar",
-      href: "/calendar",
-    },
-    {
-      label: "Settings",
-      href: "/settings",
-    },
-    {
-      label: "Help & Feedback",
-      href: "/help-feedback",
-    },
-    {
-      label: "Logout",
-      href: "/logout",
+      label: "גלריה",
+      href: "/gallery",
     },
   ],
   links: {
-    github: "https://github.com/nextui-org/nextui",
-    twitter: "https://twitter.com/getnextui",
-    docs: "https://nextui.org",
-    discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev",
+    facebook: "https://www.facebook.com/katrin.yair",
+    instagram: "https://www.instagram.com/katrinyair",
+    whatsappChat: "https://wa.me/972556620441",
+    whatsappRecipesChat: "https://chat.whatsapp.com/LNe0EqWlJStCAtybKVw3Rm",
+    googleMapsAddress: "https://maps.app.goo.gl/RwgiUnZhJ4KR9czz6",
+    phoneNumber: "tel:+972556620441",
   },
 };
