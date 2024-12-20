@@ -6,6 +6,8 @@ export const siteConfig = {
   hero: {
     title: "פילאטיס שעושה שינוי – בגוף ובנפש",
     subtitle: "התחילי היום את המסע לבריאות, איזון וחוזק פנימי.",
+    primaryAction: "תאמי שיעור ניסיון",
+    secondaryAction: "צפייה בשיעורים",
   },
   navItems: [
     {
