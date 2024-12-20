@@ -3,7 +3,7 @@ import { tv } from "tailwind-variants";
 export const title = tv({
   base: "tracking-tight inline font-semibold",
   variants: {
-    color: {
+    gradient: {
       violet: "from-[#FF1CF7] to-[#b249f8]",
       yellow: "from-[#FF705B] to-[#FFB457]",
       blue: "from-[#5EA2EF] to-[#0072F5]",
@@ -12,21 +12,31 @@ export const title = tv({
       pink: "from-[#FF72E1] to-[#F54C7A]",
       foreground: "dark:from-[#FFFFFF] dark:to-[#4B4B4B]",
     },
+    color: {
+      violet: "text-[#FF1CF7]",
+      yellow: "text-[#FF705B]",
+      blue: "text-[#5EA2EF]",
+      cyan: "text-[#00b7fa]",
+      green: "text-[#6FEE8D]",
+      pink: "text-[#FF72E1]",
+      foreground: "text-[#FFFFFF]",
+    },
     size: {
-      sm: "text-3xl lg:text-4xl",
-      md: "text-[2.3rem] lg:text-5xl leading-9",
-      lg: "text-4xl lg:text-6xl",
+      sm: "text-3xl md:text-4xl",
+      md: "text-[2.3rem] md:text-5xl leading-9",
+      lg: "text-4xl md:text-6xl",
     },
     fullWidth: {
       true: "w-full block",
     },
   },
   defaultVariants: {
-    size: "md",
+    size: "sm",
+    color: "foreground",
   },
   compoundVariants: [
     {
-      color: [
+      gradient: [
         "violet",
         "yellow",
         "blue",
@@ -41,13 +51,5 @@ export const title = tv({
 });
 
 export const subtitle = tv({
-  base: "w-full md:w-1/2 my-2 text-lg lg:text-xl text-default-600 block max-w-full",
-  variants: {
-    fullWidth: {
-      true: "!w-full",
-    },
-  },
-  defaultVariants: {
-    fullWidth: true,
-  },
+  base: "text-xl md:text-2xl text-gray-200",
 });
