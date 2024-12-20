@@ -20,7 +20,7 @@ export const Navbar = () => {
   return (
     <NextUINavbar
       shouldHideOnScroll
-      classNames={{ base: "absolute", menu: "overflow-hidden" }}
+      classNames={{ base: "fixed", menu: "overflow-hidden" }}
       maxWidth="xl"
     >
       <NavbarContent className="md:hidden" justify="start">
