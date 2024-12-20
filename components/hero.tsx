@@ -8,6 +8,7 @@ import { siteConfig } from "@/config/site";
 const sectionWrapperProps = {
   title: siteConfig.hero.title,
   subtitle: siteConfig.hero.subtitle,
+  size: "sm" as "sm",
 };
 
 export const Hero = () => {
@@ -26,7 +27,7 @@ export const Hero = () => {
 
       <SectionWrapper
         {...sectionWrapperProps}
-        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 gap-6 md:gap-10"
       >
         <div className="flex items-center justify-center gap-3">
           <Button color="primary" href={"#"}>

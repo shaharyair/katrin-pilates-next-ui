@@ -6,20 +6,38 @@ interface SectionWrapper {
   title: string;
   subtitle: string;
   children: React.ReactNode;
-  className: string;
+  classNames: Partial<
+    Record<"root" | "title" | "subtitle" | "childrenWrapper", string>
+  >;
+  size: "xs" | "sm" | "md" | "lg";
 }
 
 export const SectionWrapper = (props: Partial<SectionWrapper>) => {
   return (
     <div
       className={clsx(
-        "container flex flex-col items-center justify-center gap-6 text-center md:gap-10",
-        props.className,
+        "flex w-full flex-col items-center justify-center text-center",
+        props.classNames?.root,
       )}
     >
-      {props.title && <h1 className={clsx(title())}>{props.title}</h1>}
-      {props.subtitle && <p className={subtitle()}>{props.subtitle}</p>}
-      {props.children}
+      {props.title && (
+        <h1
+          className={clsx(
+            title({ size: props.size || "xs" }),
+            props.classNames?.title,
+          )}
+        >
+          {props.title}
+        </h1>
+      )}
+      {props.subtitle && (
+        <p className={clsx(subtitle(), "mt-1", props.classNames?.subtitle)}>
+          {props.subtitle}
+        </p>
+      )}
+      <div className={clsx("mt-8", props.classNames?.childrenWrapper)}>
+        {props.children}
+      </div>
     </div>
   );
 };
