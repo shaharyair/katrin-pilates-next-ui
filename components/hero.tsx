@@ -1,36 +1,42 @@
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
-import Link from "next/link";
+
+import { SectionWrapper } from "./sectionWrapper";
 
 import { siteConfig } from "@/config/site";
 
+const sectionWrapperProps = {
+  title: siteConfig.hero.title,
+  subtitle: siteConfig.hero.subtitle,
+};
+
 export const Hero = () => {
   return (
-    <section className="relative flex h-[calc(100vh_-_4rem)] w-full flex-col items-center justify-center">
+    <section
+      className="relative flex h-[100svh] w-full flex-col items-center justify-center"
+      id="hero"
+    >
       <Image
-        alt="/asd"
-        className="size-full object-cover brightness-50"
+        alt="hero example"
+        className="size-full object-cover brightness-[40%]"
         height={1080}
         src="/hero/example.jpg"
         width={1920}
       />
 
-      <div className="container absolute left-1/2 top-1/2 flex h-1/4 -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-between text-center">
-        <h1 className="text-xl font-bold text-white md:text-3xl">
-          {siteConfig.hero.title}
-        </h1>
-        <p className="text-xl text-white md:text-3xl">
-          {siteConfig.hero.subtitle}
-        </p>
+      <SectionWrapper
+        {...sectionWrapperProps}
+        className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+      >
         <div className="flex items-center justify-center gap-3">
-          <Button as={Link} color="primary" href={"#"}>
+          <Button color="primary" href={"#"}>
             {siteConfig.hero.primaryAction}
           </Button>
-          <Button as={Link} color="secondary" href={"#"}>
+          <Button color="secondary" href={"#"}>
             {siteConfig.hero.secondaryAction}
           </Button>
         </div>
-      </div>
+      </SectionWrapper>
     </section>
   );
 };
