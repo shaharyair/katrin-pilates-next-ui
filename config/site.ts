@@ -3,14 +3,20 @@ export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: "Next.js + NextUI",
   description: "Make beautiful websites regardless of your design experience.",
+  hero: {
+    title: "פילאטיס שעושה שינוי – בגוף ובנפש",
+    subtitle: "התחילי היום את המסע לבריאות, איזון וחוזק פנימי.",
+    primaryAction: "תאמי שיעור ניסיון",
+    secondaryAction: "צפייה בשיעורים",
+  },
   navItems: [
     {
       label: "בית",
       href: "/",
     },
     {
-      label: "קצת עלינו",
-      href: "/about-us",
+      label: "על הסטודיו",
+      href: "/studio",
     },
     {
       label: "שיעורים",

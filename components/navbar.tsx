@@ -18,20 +18,25 @@ import { siteConfig } from "@/config/site";
 
 export const Navbar = () => {
   return (
-    <NextUINavbar maxWidth="xl" position="sticky">
+    <NextUINavbar
+      shouldHideOnScroll
+      classNames={{ menu: "overflow-hidden" }}
+      maxWidth="xl"
+      position="static"
+    >
       <NavbarContent className="md:hidden" justify="start">
         <NavbarMenuToggle />
         <ThemeSwitch />
       </NavbarContent>
 
       <NavbarContent justify="start">
-        <ul className="hidden md:flex gap-4 justify-start">
+        <ul className="hidden justify-start gap-4 md:flex">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <NextLink
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "data-[active=true]:text-primary data-[active=true]:font-medium",
+                  "data-[active=true]:font-medium data-[active=true]:text-primary",
                 )}
                 color="foreground"
                 href={item.href}
@@ -44,8 +49,8 @@ export const Navbar = () => {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarBrand as="li" className="gap-3 max-w-fit">
-          <NextLink className="flex justify-start items-center gap-1" href="/">
+        <NavbarBrand as="li" className="max-w-fit gap-3">
+          <NextLink className="flex items-center justify-start gap-1" href="/">
             {/* <Logo /> */}
             {/* <p className="font-bold text-inherit">Katrin Studio</p> */}
             <Image
@@ -60,14 +65,14 @@ export const Navbar = () => {
         </NavbarBrand>
       </NavbarContent>
 
-      <NavbarMenu className="overflow-hidden">
+      <NavbarMenu>
         <div className="flex flex-col gap-2">
           {siteConfig.navItems.map((item, index) => (
             <NavbarMenuItem key={`${item}-${index}`}>
               <Link
                 className={clsx(
                   linkStyles({ color: "foreground" }),
-                  "py-1.5 px-2.5",
+                  "px-2.5 py-1.5",
                 )}
                 href="#"
                 size="lg"
