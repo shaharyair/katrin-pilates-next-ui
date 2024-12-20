@@ -56,7 +56,6 @@ export const Navbar = () => {
               alt=""
               className="dark:invert"
               height={38}
-              objectFit="contain"
               src="/logo.svg"
               width={80}
             />
