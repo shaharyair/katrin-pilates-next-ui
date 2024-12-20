@@ -20,9 +20,8 @@ export const Navbar = () => {
   return (
     <NextUINavbar
       shouldHideOnScroll
-      classNames={{ menu: "overflow-hidden" }}
+      classNames={{ base: "absolute", menu: "overflow-hidden" }}
       maxWidth="xl"
-      position="static"
     >
       <NavbarContent className="md:hidden" justify="start">
         <NavbarMenuToggle />

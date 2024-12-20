@@ -39,7 +39,7 @@ export default function RootLayout({
       <head />
       <body
         className={clsx(
-          `min-h-screen bg-background ${openSans.className} antialiased`,
+          `bg-background ${openSans.className} antialiased`,
           fontSans.variable,
         )}
       >
