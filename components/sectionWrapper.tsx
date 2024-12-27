@@ -20,7 +20,7 @@ interface SectionWrapper {
 
 export const SectionWrapper = (props: Partial<SectionWrapper>) => {
   return (
-    <div
+    <section
       className={clsx(
         "flex w-full flex-col items-center justify-center text-center",
         props.classNames?.root,
@@ -44,6 +44,6 @@ export const SectionWrapper = (props: Partial<SectionWrapper>) => {
       <div className={clsx("mt-8 w-full", props.classNames?.childrenWrapper)}>
         {props.children}
       </div>
-    </div>
+    </section>
   );
 };
