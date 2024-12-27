@@ -1,5 +1,5 @@
+import { Card, CardBody, CardHeader } from "@nextui-org/card";
 import React from "react";
-import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
 
 import { Container } from "./container";
 import { SectionWrapper } from "./sectionWrapper";
