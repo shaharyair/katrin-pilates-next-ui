@@ -1,3 +1,10 @@
+import {
+  CalendarIcon,
+  ClockIcon,
+  DumbbellIcon,
+  UsersIcon,
+} from "@/components/icons";
+
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
@@ -48,6 +55,27 @@ export const siteConfig = {
         job: "מתכנת",
         avatar: "https://randomuser.me/api/portraits/men/6.jpg",
         text: "חברה אמינה ומקצועית. השירות היה מעולה והיחס האישי עשה את כל ההבדל.",
+      },
+    ],
+  },
+  benefits: {
+    title: "למה לבחור בנו ?",
+    items: [
+      {
+        icon: <DumbbellIcon />,
+        text: "שירות מקצועי ואמין שמתמקד בצרכים שלכם.",
+      },
+      {
+        icon: <UsersIcon />,
+        text: "צוות מנוסה עם מומחיות בתחומים מגוונים.",
+      },
+      {
+        icon: <CalendarIcon />,
+        text: "יחס אישי ותשומת לב לכל לקוח.",
+      },
+      {
+        icon: <ClockIcon />,
+        text: "תוצאות מוכחות ושביעות רצון גבוהה.",
       },
     ],
   },

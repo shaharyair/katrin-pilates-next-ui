@@ -11,7 +11,7 @@ const sectionWrapperProps = {
   subtitle: siteConfig.testimonials.subtitle,
   classNames: {
     childrenWrapper:
-      "w-full grid grid-cols-1 md:grid-cols-3 gap-3 auto-rows-auto",
+      "w-full grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto",
   },
 };
 
