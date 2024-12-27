@@ -1,7 +1,7 @@
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
 
-import { SectionWrapper } from "./sectionWrapper";
+import { SectionWrapper, SectionWrapperSize } from "./sectionWrapper";
 import { Container } from "./container";
 
 import { siteConfig } from "@/config/site";
@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site";
 const sectionWrapperProps = {
   title: siteConfig.hero.title,
   subtitle: siteConfig.hero.subtitle,
-  size: "sm" as "sm",
+  size: SectionWrapperSize.sm,
   classNames: {
     root: "w-full gap-6 md:gap-10 text-gray-200",
     subtitle: "!mt-0",

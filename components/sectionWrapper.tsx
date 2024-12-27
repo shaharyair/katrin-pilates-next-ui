@@ -2,14 +2,20 @@ import clsx from "clsx";
 
 import { subtitle, title } from "./primitives";
 
-type classNames = "root" | "title" | "subtitle" | "childrenWrapper";
+export enum SectionWrapperSize {
+  xs = "xs",
+  sm = "sm",
+  md = "md",
+  lg = "lg",
+}
 
+type classNames = "root" | "title" | "subtitle" | "childrenWrapper";
 interface SectionWrapper {
   title: string;
   subtitle: string;
   children: React.ReactNode;
   classNames: Partial<Record<classNames, string>>;
-  size: "xs" | "sm" | "md" | "lg";
+  size: SectionWrapperSize;
 }
 
 export const SectionWrapper = (props: Partial<SectionWrapper>) => {
