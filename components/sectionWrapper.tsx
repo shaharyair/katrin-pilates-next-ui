@@ -2,13 +2,13 @@ import clsx from "clsx";
 
 import { subtitle, title } from "./primitives";
 
+type classNames = "root" | "title" | "subtitle" | "childrenWrapper";
+
 interface SectionWrapper {
   title: string;
   subtitle: string;
   children: React.ReactNode;
-  classNames: Partial<
-    Record<"root" | "title" | "subtitle" | "childrenWrapper", string>
-  >;
+  classNames: Partial<Record<classNames, string>>;
   size: "xs" | "sm" | "md" | "lg";
 }
 
