@@ -22,8 +22,8 @@ export const Navbar = () => {
       classNames={{ base: "fixed", menu: "overflow-hidden" }}
       maxWidth="xl"
     >
-      <NavbarContent className="md:hidden" justify="start">
-        <NavbarMenuToggle />
+      <NavbarContent justify="start">
+        <NavbarMenuToggle className="md:hidden" />
         <ThemeSwitch />
       </NavbarContent>
 
