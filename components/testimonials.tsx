@@ -47,7 +47,7 @@ const TestimonialsCard = (props: (typeof siteConfig.testimonials.items)[0]) => {
         </div>
       </CardHeader>
       <CardBody>
-        <p>{props.text}</p>
+        <q>{props.text}</q>
       </CardBody>
       <CardFooter />
     </Card>
