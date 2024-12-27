@@ -3,6 +3,7 @@ import { Metadata } from "next";
 import { Hero } from "@/components/hero";
 import { Testimonials } from "@/components/testimonials";
 import { Benefits } from "@/components/benefits";
+import { Faq } from "@/components/faq";
 
 export const metadata: Metadata = {
   title: "הסטודיו של קאתרין",
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero />
       <Benefits />
       <Testimonials />
+      <Faq />
     </div>
   );
 }
