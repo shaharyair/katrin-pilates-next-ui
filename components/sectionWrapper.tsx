@@ -41,7 +41,7 @@ export const SectionWrapper = (props: Partial<SectionWrapper>) => {
           {props.subtitle}
         </p>
       )}
-      <div className={clsx("mt-8", props.classNames?.childrenWrapper)}>
+      <div className={clsx("mt-8 w-full", props.classNames?.childrenWrapper)}>
         {props.children}
       </div>
     </div>
