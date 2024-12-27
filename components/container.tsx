@@ -7,7 +7,7 @@ interface ContainerProps {
 
 export const Container = (props: Partial<ContainerProps>) => {
   return (
-    <div className={clsx("container py-6", props.className)}>
+    <div className={clsx("container py-12", props.className)}>
       {props.children}
     </div>
   );
