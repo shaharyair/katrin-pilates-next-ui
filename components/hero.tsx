@@ -11,7 +11,7 @@ const sectionWrapperProps = {
   subtitle: siteConfig.hero.subtitle,
   size: "sm" as "sm",
   classNames: {
-    root: "w-full gap-6 md:gap-10",
+    root: "w-full gap-6 md:gap-10 text-gray-200",
     subtitle: "!mt-0",
     childrenWrapper: "!mt-1",
   },
