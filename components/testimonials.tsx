@@ -42,7 +42,7 @@ const TestimonialsCard = (props: (typeof siteConfig.testimonials.items)[0]) => {
           <Avatar size="lg" src={props.avatar} />
           <div className="flex flex-col items-start justify-center">
             <p className="text-lg">{props.name || "example name"}</p>
-            <p className="text-gray-400">{props.job}</p>
+            <p className="text-gray-500 dark:text-gray-400">{props.job}</p>
           </div>
         </div>
       </CardHeader>
