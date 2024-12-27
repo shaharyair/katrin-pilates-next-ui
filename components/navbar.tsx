@@ -10,7 +10,6 @@ import {
 } from "@nextui-org/navbar";
 import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
-import Image from "next/image";
 import NextLink from "next/link";
 
 import { ThemeSwitch } from "@/components/theme-switch";
@@ -50,15 +49,7 @@ export const Navbar = () => {
       <NavbarContent justify="end">
         <NavbarBrand as="li" className="max-w-fit gap-3">
           <NextLink className="flex items-center justify-start gap-1" href="/">
-            {/* <Logo /> */}
-            {/* <p className="font-bold text-inherit">Katrin Studio</p> */}
-            <Image
-              alt=""
-              className="dark:invert"
-              height={38}
-              src="/logo.svg"
-              width={80}
-            />
+            <span className="text-xl">KATRIN</span>
           </NextLink>
         </NavbarBrand>
       </NavbarContent>
