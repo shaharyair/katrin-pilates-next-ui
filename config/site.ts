@@ -9,6 +9,48 @@ export const siteConfig = {
     primaryAction: "תאמי שיעור ניסיון",
     secondaryAction: "צפייה בשיעורים",
   },
+  testimonials: {
+    title: "מה אומרים עלינו",
+    subtitle: "הקשבה, תמיכה ומקצועיות בכל שיעור.",
+    items: [
+      {
+        name: "אורית כהן",
+        job: "מנהלת חשבונות",
+        avatar: "https://randomuser.me/api/portraits/women/1.jpg",
+        text: "השירות שקיבלתי היה מדהים! צוות מקצועי, אדיב ועם תשומת לב לפרטים. תודה רבה!",
+      },
+      {
+        name: "דוד לוי",
+        job: "מנהל פרויקטים",
+        avatar: "https://randomuser.me/api/portraits/men/2.jpg",
+        text: "אני ממליץ בחום על החברה הזו. התהליך היה פשוט ונעים, וקיבלתי בדיוק את מה שחיפשתי.",
+      },
+      {
+        name: "רונית ישראלי",
+        job: "מעצבת גרפית",
+        avatar: "https://randomuser.me/api/portraits/women/3.jpg",
+        text: "צוות יוצא מן הכלל! תמיד זמינים, מקצועיים ואדיבים. חוויה מדהימה.",
+      },
+      {
+        name: "משה פרץ",
+        job: "אנליסט פיננסי",
+        avatar: "https://randomuser.me/api/portraits/men/4.jpg",
+        text: "אין מילים לתאר את השירות האיכותי שקיבלתי. צוות מעולה שעושה הכל כדי לוודא שהלקוח מרוצה.",
+      },
+      {
+        name: "גלית עמר",
+        job: "יועצת שיווק",
+        avatar: "https://randomuser.me/api/portraits/women/5.jpg",
+        text: "תודה על עבודה יוצאת דופן! המקצועיות והשירות ברמה הכי גבוהה שיכולה להיות.",
+      },
+      {
+        name: "אריאל בנימין",
+        job: "מתכנת",
+        avatar: "https://randomuser.me/api/portraits/men/6.jpg",
+        text: "חברה אמינה ומקצועית. השירות היה מעולה והיחס האישי עשה את כל ההבדל.",
+      },
+    ],
+  },
   navItems: [
     {
       label: "בית",
