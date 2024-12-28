@@ -62,7 +62,7 @@ export const Navbar = () => {
                   linkStyles({ color: "foreground" }),
                   "px-2.5 py-1.5",
                 )}
-                href="#"
+                href={item.href}
                 size="lg"
               >
                 {item.label}
