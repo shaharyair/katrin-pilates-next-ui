@@ -8,6 +8,7 @@ import { Providers } from "./providers";
 import { Navbar } from "@/components/navbar";
 import { fontSans } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
+import { Footer } from "@/components/footer";
 
 const openSans = Open_Sans({ subsets: ["hebrew"], display: "swap" });
 
@@ -47,6 +48,7 @@ export default function RootLayout({
           <div>
             <Navbar />
             <main>{children}</main>
+            <Footer />
           </div>
         </Providers>
       </body>
