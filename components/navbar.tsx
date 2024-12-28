@@ -10,7 +10,8 @@ import {
 } from "@nextui-org/navbar";
 import { link as linkStyles } from "@nextui-org/theme";
 import clsx from "clsx";
-import NextLink from "next/link";
+
+import { Logo } from "./logo";
 
 import { ThemeSwitch } from "@/components/theme-switch";
 import { siteConfig } from "@/config/site";
@@ -22,8 +23,8 @@ export const Navbar = () => {
       classNames={{ base: "fixed", menu: "overflow-hidden" }}
       maxWidth="xl"
     >
-      <NavbarContent className="md:hidden" justify="start">
-        <NavbarMenuToggle />
+      <NavbarContent justify="start">
+        <NavbarMenuToggle className="md:hidden" />
         <ThemeSwitch />
       </NavbarContent>
 
@@ -31,7 +32,7 @@ export const Navbar = () => {
         <ul className="hidden justify-start gap-4 md:flex">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
-              <NextLink
+              <Link
                 className={clsx(
                   linkStyles({ color: "foreground" }),
                   "data-[active=true]:font-medium data-[active=true]:text-primary",
@@ -40,7 +41,7 @@ export const Navbar = () => {
                 href={item.href}
               >
                 {item.label}
-              </NextLink>
+              </Link>
             </NavbarItem>
           ))}
         </ul>
@@ -48,9 +49,7 @@ export const Navbar = () => {
 
       <NavbarContent justify="end">
         <NavbarBrand as="li" className="max-w-fit gap-3">
-          <NextLink className="flex items-center justify-start gap-1" href="/">
-            <span className="text-xl">KATRIN</span>
-          </NextLink>
+          <Logo />
         </NavbarBrand>
       </NavbarContent>
 
