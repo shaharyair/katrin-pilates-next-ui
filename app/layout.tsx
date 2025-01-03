@@ -10,7 +10,7 @@ import { Navbar } from "@/components/navbar";
 import { fontSans } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
 import { ReactQueryProvider } from "@/providers/reactQueryProvider";
-ReactQueryProvider
+
 const openSans = Open_Sans({ subsets: ["hebrew"], display: "swap" });
 
 export const metadata: Metadata = {
