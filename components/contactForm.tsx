@@ -98,8 +98,8 @@ export const ContactForm = () => {
             <Input
               isClearable
               isRequired
-              disabled={mutation.isPending}
               errorMessage={form.formState.errors?.name?.message}
+              isDisabled={mutation.isPending}
               isInvalid={!!form.formState.errors?.name}
               label="שם"
               size={inputSize}
@@ -108,8 +108,8 @@ export const ContactForm = () => {
             <Input
               isClearable
               isRequired
-              disabled={mutation.isPending}
               errorMessage={form.formState.errors?.email?.message}
+              isDisabled={mutation.isPending}
               isInvalid={!!form.formState.errors?.email}
               label="אימייל"
               size={inputSize}
@@ -118,8 +118,8 @@ export const ContactForm = () => {
             <Input
               isClearable
               isRequired
-              disabled={mutation.isPending}
               errorMessage={form.formState.errors?.phoneNumber?.message}
+              isDisabled={mutation.isPending}
               isInvalid={!!form.formState.errors?.phoneNumber}
               label="מספר טלפון"
               size={inputSize}
@@ -127,8 +127,8 @@ export const ContactForm = () => {
             />
             <Textarea
               isClearable
-              disabled={mutation.isPending}
               errorMessage={form.formState.errors?.message?.message}
+              isDisabled={mutation.isPending}
               isInvalid={!!form.formState.errors?.message}
               label="הודעה"
               placeholder="ספרי לנו קצת עלייך..."
