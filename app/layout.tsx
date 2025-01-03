@@ -5,11 +5,12 @@ import { Open_Sans } from "next/font/google";
 
 import { Providers } from "./providers";
 
+import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { fontSans } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
-import { Footer } from "@/components/footer";
-
+import { ReactQueryProvider } from "@/providers/reactQueryProvider";
+ReactQueryProvider
 const openSans = Open_Sans({ subsets: ["hebrew"], display: "swap" });
 
 export const metadata: Metadata = {
@@ -44,13 +45,15 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div className="flex min-h-svh flex-col justify-between">
-            <Navbar />
-            <main className="my-auto">{children}</main>
-            <Footer />
-          </div>
-        </Providers>
+        <ReactQueryProvider>
+          <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
+            <div className="flex min-h-svh flex-col justify-between">
+              <Navbar />
+              <main className="my-auto">{children}</main>
+              <Footer />
+            </div>
+          </Providers>
+        </ReactQueryProvider>
       </body>
     </html>
   );
