@@ -45,9 +45,9 @@ export default function RootLayout({
         )}
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-          <div>
+          <div className="flex min-h-svh flex-col justify-between">
             <Navbar />
-            <main>{children}</main>
+            <main className="my-auto">{children}</main>
             <Footer />
           </div>
         </Providers>

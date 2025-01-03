@@ -308,7 +308,7 @@ export const CalendarIcon: React.FC<IconSvgProps> = (props) => {
 };
 
 export const WhatsappIcon: React.FC<IconSvgProps> = (props) => {
-  const { width, height = 26 } = props;
+  const { width, height = 24 } = props;
 
   return (
     <svg
@@ -326,7 +326,7 @@ export const WhatsappIcon: React.FC<IconSvgProps> = (props) => {
 };
 
 export const FacebookIcon: React.FC<IconSvgProps> = (props) => {
-  const { width, height = 26 } = props;
+  const { width, height = 24 } = props;
 
   return (
     <svg
@@ -344,7 +344,7 @@ export const FacebookIcon: React.FC<IconSvgProps> = (props) => {
 };
 
 export const InstagramIcon: React.FC<IconSvgProps> = (props) => {
-  const { width, height = 26 } = props;
+  const { width, height = 24 } = props;
 
   return (
     <svg
