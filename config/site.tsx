@@ -100,6 +100,10 @@ export const siteConfig = {
       },
     ],
   },
+  contact: {
+    title: "צרו קשר",
+    subtitle: "אנחנו כאן כדי לעזור לכם בכל שאלה.",
+  },
   navItems: [
     {
       label: "בית",
