@@ -46,16 +46,17 @@ const schema = z.object({
       message: "מספר טלפון לא תקין",
     }),
   message: z.string().trim(),
+  botcheck: z.string().max(0),
 });
 
 export const ContactForm = () => {
+  const form = useForm<z.infer<typeof schema>>({
+    resolver: zodResolver(schema),
+  });
+
   const mutation = useMutation({
     mutationFn: (data: z.infer<typeof schema>) =>
       axios.post("/api/send-email", data),
-  });
-
-  const form = useForm<z.infer<typeof schema>>({
-    resolver: zodResolver(schema),
   });
 
   const onSubmit = async (data: z.infer<typeof schema>) => {
@@ -95,6 +96,7 @@ export const ContactForm = () => {
       <Container>
         <SectionWrapper {...sectionWrapperProps}>
           <Form className="w-full" onSubmit={form.handleSubmit(onSubmit)}>
+            <Input className="hidden" {...form.register("botcheck")} />
             <Input
               isClearable
               isRequired
