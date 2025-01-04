@@ -19,7 +19,6 @@ import { siteConfig } from "@/config/site";
 export const Navbar = () => {
   return (
     <NextUINavbar
-      shouldHideOnScroll
       classNames={{ base: "fixed", menu: "overflow-hidden" }}
       maxWidth="xl"
     >
