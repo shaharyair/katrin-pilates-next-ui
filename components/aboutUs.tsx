@@ -35,6 +35,7 @@ export const AboutUs = () => {
           as={NextImage}
           className="object-cover"
           height={400}
+          loading="lazy"
           src="/hero/example.jpg"
           width={650}
         />
