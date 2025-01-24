@@ -360,3 +360,39 @@ export const InstagramIcon: React.FC<IconSvgProps> = (props) => {
     </svg>
   );
 };
+
+export const ChevronRightIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 24 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="m9 18 6-6-6-6" />
+    </svg>
+  );
+};
+
+export const ChevronLeftIcon: React.FC<IconSvgProps> = (props) => {
+  const { width, height = 24 } = props;
+
+  return (
+    <svg
+      fill="none"
+      height={height}
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      width={width}
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <path d="m15 18-6-6 6-6" />
+    </svg>
+  );
+};
