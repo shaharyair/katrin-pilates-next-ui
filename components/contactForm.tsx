@@ -93,7 +93,7 @@ export const ContactForm = () => {
           <ModalFooter />
         </ModalContent>
       </Modal>
-      <Container>
+      <Container id="contact-us">
         <SectionWrapper {...sectionWrapperProps}>
           <Form className="w-full" onSubmit={form.handleSubmit(onSubmit)}>
             <Input className="hidden" {...form.register("botcheck")} />

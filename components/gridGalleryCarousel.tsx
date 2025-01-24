@@ -11,7 +11,7 @@ import { EmblaCarousel, EmblaCarouselSlide } from "./emblaCarousel";
 export const GridGalleryCarousel = () => {
   return (
     <>
-      <Container className="max-w-none px-0 drop-shadow-sm">
+      <Container className="max-w-none px-0 drop-shadow-sm" id="gallery">
         <EmblaCarousel
           options={{ loop: true, slidesToScroll: "auto", displayButtons: true }}
         >

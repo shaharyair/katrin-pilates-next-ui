@@ -121,31 +121,31 @@ export const siteConfig = {
     },
     {
       label: "על הסטודיו",
-      href: "/studio",
+      href: "/#studio",
     },
+    // {
+    //   label: "שיעורים",
+    //   href: "/classes",
+    // },
+    // {
+    //   label: "מחירים",
+    //   href: "/pricing",
+    // },
     {
-      label: "שיעורים",
-      href: "/classes",
-    },
-    {
-      label: "מחירים",
-      href: "/pricing",
+      label: "גלריה",
+      href: "/#gallery",
     },
     {
       label: "מתאמנות מספרות",
-      href: "/testimonials",
-    },
-    {
-      label: "צרו קשר",
-      href: "/contact-us",
+      href: "/#testimonials",
     },
     {
       label: "שאלות נפוצות",
-      href: "/faqs",
+      href: "/#faq",
     },
     {
-      label: "גלריה",
-      href: "/gallery",
+      label: "צרו קשר",
+      href: "/#contact-us",
     },
   ],
   galleryGridImages: [

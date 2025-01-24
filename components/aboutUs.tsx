@@ -17,7 +17,7 @@ const sectionWrapperProps = {
 
 export const AboutUs = () => {
   return (
-    <Container>
+    <Container id="studio">
       <SectionWrapper {...sectionWrapperProps}>
         <div className="flex flex-col gap-6">
           {siteConfig.aboutUs.text.map((text, index) => (
