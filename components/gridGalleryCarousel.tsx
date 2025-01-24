@@ -6,10 +6,7 @@ import { Gallery, GalleryProps, ThumbnailImageProps } from "react-grid-gallery";
 import { siteConfig } from "../config/site";
 
 import { Container } from "./container";
-import {
-  EmblaCarousel,
-  EmblaCarouselSlide,
-} from "./emblaCarousel/emblaCarousel";
+import { EmblaCarousel, EmblaCarouselSlide } from "./emblaCarousel";
 
 export const GridGalleryCarousel = () => {
   return (

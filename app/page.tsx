@@ -6,7 +6,7 @@ import { Benefits } from "@/components/benefits";
 import { Faq } from "@/components/faq";
 import { ContactForm } from "@/components/contactForm";
 import { AboutUs } from "@/components/aboutUs";
-import { GridGalleryCarousel } from "@/components/galleryGridCarousel";
+import { GridGalleryCarousel } from "@/components/gridGalleryCarousel";
 
 export const metadata: Metadata = {
   title: "הסטודיו של קאתרין",

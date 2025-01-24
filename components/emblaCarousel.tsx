@@ -5,7 +5,7 @@ import clsx from "clsx";
 import { EmblaOptionsType } from "embla-carousel";
 import useEmblaCarousel from "embla-carousel-react";
 
-import { ChevronLeftIcon, ChevronRightIcon } from "../icons";
+import { ChevronLeftIcon, ChevronRightIcon } from "./icons";
 
 interface EmblaCarouselProps {
   options?: EmblaOptionsType & { displayButtons?: boolean };
