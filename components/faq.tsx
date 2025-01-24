@@ -13,7 +13,7 @@ const sectionWrapperProps = {
 
 export const Faq = () => {
   return (
-    <Container>
+    <Container id="faq">
       <SectionWrapper {...sectionWrapperProps}>
         <Accordion selectionMode="multiple">
           {siteConfig.faq.items.map((item, i) => (

@@ -15,7 +15,7 @@ const sectionWrapperProps = {
 
 export const Benefits = () => {
   return (
-    <Container>
+    <Container id="benefits">
       <SectionWrapper {...sectionWrapperProps}>
         {siteConfig.benefits.items.map((item, i) => (
           <BenefitsCard key={i} {...item} />
