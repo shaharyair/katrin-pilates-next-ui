@@ -2,7 +2,6 @@ import LightboxComponent, {
   LightboxExternalProps,
 } from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 
 import LightboxNextImage from "./lightboxNextImage";
 
@@ -16,7 +15,6 @@ export default function Lightbox(
   return (
     <LightboxComponent
       noScroll={{ disabled: true }}
-      plugins={[Fullscreen]}
       render={{ slide: LightboxNextImage }}
       styles={{
         container: { backgroundColor: "rgba(0, 0, 0, 0.9)" },
