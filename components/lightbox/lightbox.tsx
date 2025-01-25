@@ -1,8 +1,9 @@
 import LightboxComponent, {
   LightboxExternalProps,
 } from "yet-another-react-lightbox";
-
 import "yet-another-react-lightbox/styles.css";
+import "yet-another-react-lightbox/plugins/counter.css";
+import Counter from "yet-another-react-lightbox/plugins/counter";
 
 import LightboxNextImage from "./lightboxNextImage";
 
@@ -15,9 +16,13 @@ export default function Lightbox(
 ) {
   return (
     <LightboxComponent
+      noScroll={{ disabled: true }}
+      plugins={[Counter]}
       render={{ slide: LightboxNextImage }}
-      // add plugins here
-      // plugins={[]}
+      styles={{
+        container: { backgroundColor: "rgba(0, 0, 0, 0.9)" },
+        toolbar: { right: 0, left: "auto", flexDirection: "row-reverse" },
+      }}
       {...props}
     />
   );
