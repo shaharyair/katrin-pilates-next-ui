@@ -17,7 +17,7 @@ import { setLightboxImage } from "../features/lightbox/lightboxSlice";
 import { Container } from "./container";
 import { EmblaCarousel, EmblaCarouselSlide } from "./emblaCarousel";
 
-const Lightbox = dynamic(() => import("../components/lightbox"));
+const Lightbox = dynamic(() => import("./lightbox/lightbox"));
 
 export const GridGalleryCarousel = () => {
   const lightbox = useAppSelector((state) => state.lightbox.value);
