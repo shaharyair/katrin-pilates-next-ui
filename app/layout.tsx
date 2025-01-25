@@ -10,6 +10,7 @@ import { Navbar } from "@/components/navbar";
 import { fontSans } from "@/config/fonts";
 import { siteConfig } from "@/config/site";
 import { ReactQueryProvider } from "@/providers/reactQueryProvider";
+import { ReduxProvider } from "@/providers/reduxProvider";
 
 const openSans = Open_Sans({ subsets: ["hebrew"], display: "swap" });
 
@@ -45,15 +46,19 @@ export default function RootLayout({
           fontSans.variable,
         )}
       >
-        <ReactQueryProvider>
-          <Providers themeProps={{ attribute: "class", defaultTheme: "light" }}>
-            <div className="flex min-h-svh flex-col justify-between">
-              <Navbar />
-              <main className="my-auto">{children}</main>
-              <Footer />
-            </div>
-          </Providers>
-        </ReactQueryProvider>
+        <ReduxProvider>
+          <ReactQueryProvider>
+            <Providers
+              themeProps={{ attribute: "class", defaultTheme: "light" }}
+            >
+              <div className="flex min-h-svh flex-col justify-between">
+                <Navbar />
+                <main className="my-auto">{children}</main>
+                <Footer />
+              </div>
+            </Providers>
+          </ReactQueryProvider>
+        </ReduxProvider>
       </body>
     </html>
   );
