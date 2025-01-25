@@ -1,5 +1,5 @@
-import { Card, CardBody, CardFooter, CardHeader } from "@nextui-org/card";
-import { Avatar } from "@nextui-org/avatar";
+import { Card, CardBody, CardFooter, CardHeader } from "@heroui/card";
+import { Avatar } from "@heroui/avatar";
 
 import { Container } from "./container";
 import { SectionWrapper } from "./sectionWrapper";

@@ -1,6 +1,6 @@
 "use client";
 
-import { Accordion, AccordionItem } from "@nextui-org/accordion";
+import { Accordion, AccordionItem } from "@heroui/accordion";
 
 import { Container } from "./container";
 import { SectionWrapper } from "./sectionWrapper";
