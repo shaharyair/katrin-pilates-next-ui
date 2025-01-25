@@ -18,6 +18,10 @@ export default function Lightbox(
       noScroll={{ disabled: true }}
       plugins={[Fullscreen]}
       render={{ slide: LightboxNextImage }}
+      styles={{
+        container: { backgroundColor: "rgba(0, 0, 0, 0.9)" },
+        toolbar: { right: 0, left: "auto", flexDirection: "row-reverse" },
+      }}
       {...props}
     />
   );
