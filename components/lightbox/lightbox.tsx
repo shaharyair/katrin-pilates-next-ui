@@ -15,6 +15,7 @@ export default function Lightbox(
 ) {
   return (
     <LightboxComponent
+      noScroll={{ disabled: true }}
       plugins={[Fullscreen]}
       render={{ slide: LightboxNextImage }}
       {...props}
