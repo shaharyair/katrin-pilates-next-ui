@@ -1,4 +1,4 @@
-import { Link } from "@nextui-org/link";
+import { Link } from "@heroui/link";
 import {
   NavbarBrand,
   NavbarContent,
@@ -7,8 +7,8 @@ import {
   NavbarMenuItem,
   NavbarMenuToggle,
   Navbar as NextUINavbar,
-} from "@nextui-org/navbar";
-import { link as linkStyles } from "@nextui-org/theme";
+} from "@heroui/navbar";
+import { link as linkStyles } from "@heroui/theme";
 import clsx from "clsx";
 
 import { Logo } from "./logo";

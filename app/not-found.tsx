@@ -1,7 +1,7 @@
 "use client";
 
-import { Card, CardBody, CardFooter } from "@nextui-org/card";
-import { Link } from "@nextui-org/link";
+import { Card, CardBody, CardFooter } from "@heroui/card";
+import { Link } from "@heroui/link";
 import { useRouter } from "next/navigation";
 
 import { Container } from "@/components/container";
