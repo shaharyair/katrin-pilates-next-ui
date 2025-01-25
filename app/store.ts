@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import lightboxReducer from "../features/lightbox/lightboxSlice";
+import gridGalleryCarouselReducer from "../features/gridGalleryCarousel/gridGalleryCarouselSlice";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      lightbox: lightboxReducer,
+      gridGalleryCarousel: gridGalleryCarouselReducer,
     },
   });
 };

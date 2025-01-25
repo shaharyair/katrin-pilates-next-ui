@@ -12,7 +12,7 @@ import {
 
 import { siteConfig } from "../config/site";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
-import { setLightboxImage } from "../features/lightbox/lightboxSlice";
+import { setLightboxImage } from "../features/gridGalleryCarousel/gridGalleryCarouselSlice";
 
 import { Container } from "./container";
 import { EmblaCarousel, EmblaCarouselSlide } from "./emblaCarousel";
@@ -20,7 +20,9 @@ import { EmblaCarousel, EmblaCarouselSlide } from "./emblaCarousel";
 const Lightbox = dynamic(() => import("./lightbox/lightbox"));
 
 export const GridGalleryCarousel = () => {
-  const lightbox = useAppSelector((state) => state.lightbox.value);
+  const lightboxImage = useAppSelector(
+    (state) => state.gridGalleryCarousel.lightboxImage,
+  );
   const dispatch = useAppDispatch();
 
   const onLightboxClose = () => {
@@ -37,18 +39,18 @@ export const GridGalleryCarousel = () => {
 
   const currentLightboxIndex = useMemo(() => {
     const index = lightboxSlides.findIndex(
-      (slide) => slide.src === lightbox?.src,
+      (slide) => slide.src === lightboxImage?.src,
     );
 
     return index;
-  }, [lightboxSlides, lightbox]);
+  }, [lightboxSlides, lightboxImage]);
 
   return (
     <>
       <Lightbox
         close={onLightboxClose}
         index={currentLightboxIndex}
-        open={!!lightbox}
+        open={!!lightboxImage}
         slides={lightboxSlides}
       />
       <Container className="max-w-none px-0 drop-shadow-sm" id="gallery">
