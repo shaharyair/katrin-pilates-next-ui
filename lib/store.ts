@@ -1,6 +1,6 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import gridGalleryCarouselReducer from "../features/gridGalleryCarousel/gridGalleryCarouselSlice";
+import gridGalleryCarouselReducer from "./features/gridGalleryCarousel/gridGalleryCarouselSlice";
 
 export const makeStore = () => {
   return configureStore({

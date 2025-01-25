@@ -12,7 +12,7 @@ import {
 
 import { siteConfig } from "../config/site";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
-import { setLightboxImage } from "../features/gridGalleryCarousel/gridGalleryCarouselSlice";
+import { setLightboxImage } from "../lib/features/gridGalleryCarousel/gridGalleryCarouselSlice";
 
 import { Container } from "./container";
 import { EmblaCarousel, EmblaCarouselSlide } from "./emblaCarousel";
