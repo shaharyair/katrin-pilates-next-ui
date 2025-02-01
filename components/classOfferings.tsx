@@ -11,7 +11,7 @@ const sectionWrapperProps = {
   title: siteConfig.classOfferings.title,
   subtitle: siteConfig.classOfferings.subtitle,
   classNames: {
-    childrenWrapper: "grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-auto",
+    childrenWrapper: "grid grid-cols-1 lg:grid-cols-3 gap-6 auto-rows-auto",
   },
 };
 

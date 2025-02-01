@@ -9,7 +9,7 @@ import { siteConfig } from "@/config/site";
 const sectionWrapperProps = {
   title: siteConfig.benefits.title,
   classNames: {
-    childrenWrapper: "grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-auto",
+    childrenWrapper: "grid grid-cols-1 lg:grid-cols-4 gap-6 auto-rows-auto",
   },
 };
 
