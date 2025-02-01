@@ -35,7 +35,7 @@ const ClassOfferingsItem = (
       isHoverable
       classNames={{
         base: "p-4",
-        body: "text-center flex flex-col gap-2",
+        body: "text-center flex flex-col gap-1",
       }}
     >
       <CardHeader>
@@ -47,14 +47,14 @@ const ClassOfferingsItem = (
             wrapper: "size-full !max-w-none",
             img: "size-full object-cover object-center",
           }}
-          height={450}
+          height={425}
           src={props.image}
-          width={450}
+          width={425}
         />
       </CardHeader>
       <CardBody>
         <h3 className="text-lg font-semibold">{props.title}</h3>
-        <div className="flex flex-col items-center justify-center gap-1">
+        <div className="flex flex-col items-center justify-center">
           {props.text.map((item, index) => (
             <p key={`${index}`} className="text-lg">
               {item}
