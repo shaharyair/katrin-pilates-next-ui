@@ -147,10 +147,10 @@ export const siteConfig = {
       label: "על הסטודיו",
       href: "/#studio",
     },
-    // {
-    //   label: "שיעורים",
-    //   href: "/classes",
-    // },
+    {
+      label: "שיעורים",
+      href: "/#class-offerings",
+    },
     // {
     //   label: "מחירים",
     //   href: "/pricing",
