@@ -74,7 +74,7 @@ export const Slide = (props: GalleryProps) => {
   };
 
   return (
-    <EmblaCarouselSlide className="basis-full sm:basis-1/2 lg:basis-1/3">
+    <EmblaCarouselSlide className="max-w-lg basis-full">
       <Gallery
         enableImageSelection={false}
         images={props.images}

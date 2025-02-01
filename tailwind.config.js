@@ -17,9 +17,6 @@ module.exports = {
         center: true,
         padding: "1rem",
       },
-      screens: {
-        "2xl": "1280px", // set the max width of 2xl screen to 1280px (same as xl)
-      },
     },
   },
   darkMode: "class",

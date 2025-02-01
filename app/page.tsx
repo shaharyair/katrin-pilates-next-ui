@@ -7,6 +7,7 @@ import { Faq } from "@/components/faq";
 import { ContactForm } from "@/components/contactForm";
 import { AboutUs } from "@/components/aboutUs";
 import { GridGalleryCarousel } from "@/components/gridGalleryCarousel";
+import { ClassOfferings } from "@/components/classOfferings";
 
 export const metadata: Metadata = {
   title: "הסטודיו של קאתרין",
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Benefits />
       <AboutUs />
+      <ClassOfferings />
       <GridGalleryCarousel />
       <Testimonials />
       <Faq />
