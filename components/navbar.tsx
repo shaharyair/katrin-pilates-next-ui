@@ -24,12 +24,12 @@ export const Navbar = () => {
       maxWidth="xl"
     >
       <NavbarContent justify="start">
-        <NavbarMenuToggle className="md:hidden" />
+        <NavbarMenuToggle className="lg:hidden" />
         <ThemeSwitch />
       </NavbarContent>
 
       <NavbarContent justify="start">
-        <ul className="hidden justify-start gap-4 md:flex">
+        <ul className="hidden justify-start gap-4 lg:flex">
           {siteConfig.navItems.map((item) => (
             <NavbarItem key={item.href}>
               <Link
