@@ -114,6 +114,30 @@ export const siteConfig = {
       "כי אצלנו, זה לא רק פילאטיס – זו דרך חיים.",
     ],
   },
+  classOfferings: {
+    title: "מה אנו מציעים",
+    subtitle: "שיעורים מגוונים לכל רמה וגיל.",
+    items: [
+      {
+        image:
+          "https://randomwordgenerator.com/img/picture-generator/5fe3d7444d52b10ff3d8992cc12c30771037dbf85257714b752d72dd964f_640.jpg",
+        title: "שיעורי פילאטיס",
+        text: ["שיעורי פילאטיס מותאמים אישית לכל רמת כושר וגיל."],
+      },
+      {
+        image:
+          "https://randomwordgenerator.com/img/picture-generator/5fe3d7444d52b10ff3d8992cc12c30771037dbf85257714b752d72dd964f_640.jpg",
+        title: "שיעורי יוגה",
+        text: ["שיעורי יוגה מרגיעים ומחזקים לכל רמת כושר וגיל."],
+      },
+      {
+        image:
+          "https://randomwordgenerator.com/img/picture-generator/5fe3d7444d52b10ff3d8992cc12c30771037dbf85257714b752d72dd964f_640.jpg",
+        title: "שיעורי ריקוד",
+        text: ["שיעורי ריקוד מהנים ומאתגרים לכל רמת כושר וגיל."],
+      },
+    ],
+  },
   navItems: [
     {
       label: "בית",
