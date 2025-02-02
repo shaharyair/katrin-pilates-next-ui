@@ -9,6 +9,7 @@ import {
   Image,
   ThumbnailImageProps,
 } from "react-grid-gallery";
+import { type Slide as LightboxSlide } from "yet-another-react-lightbox";
 
 import { siteConfig } from "../config/site";
 import { useAppDispatch, useAppSelector } from "../hooks/redux";
@@ -29,7 +30,7 @@ export const GridGalleryCarousel = () => {
     dispatch(setLightboxImage(null));
   };
 
-  const lightboxSlides = useMemo(() => {
+  const lightboxSlides = useMemo<LightboxSlide[]>(() => {
     const images = siteConfig.galleryGridImages.flatMap((arr) =>
       arr.map((item) => ({ src: item.src })),
     );
@@ -45,12 +46,17 @@ export const GridGalleryCarousel = () => {
     return index;
   }, [lightboxSlides, lightboxImage]);
 
+  const isLightBoxOpen = useMemo(
+    () => currentLightboxIndex > -1,
+    [lightboxImage],
+  );
+
   return (
     <>
       <Lightbox
         close={onLightboxClose}
         index={currentLightboxIndex}
-        open={!!lightboxImage}
+        open={isLightBoxOpen}
         slides={lightboxSlides}
       />
       <Container className="max-w-none px-0 drop-shadow-sm" id="gallery">
