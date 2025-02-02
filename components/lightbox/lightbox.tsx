@@ -20,7 +20,6 @@ export default function Lightbox(
       plugins={[Counter]}
       render={{ slide: LightboxNextImage }}
       styles={{
-        root: { direction: "ltr" },
         container: { backgroundColor: "rgba(0, 0, 0, 0.9)" },
         toolbar: { right: 0, left: "auto", flexDirection: "row-reverse" },
       }}
