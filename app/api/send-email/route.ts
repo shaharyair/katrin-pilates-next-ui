@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios, { HttpStatusCode } from "axios";
 import { NextRequest, NextResponse } from "next/server";
 
 const WEB3FORMS_API_URL = "https://api.web3forms.com";
@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     const json = await request.json();
     const res = await axiosInstance.post("/submit", buildRequestBody(json));
 
-    return NextResponse.json(res.data, { status: 200 });
+    return NextResponse.json(res.data, { status: HttpStatusCode.Ok });
   } catch (error: any) {
     return NextResponse.json(
       { success: false, message: error?.message },
