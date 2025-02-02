@@ -11,7 +11,7 @@ const sectionWrapperProps = {
   subtitle: siteConfig.aboutUs.subtitle,
   classNames: {
     childrenWrapper:
-      "flex flex-col-reverse items-center justify-between gap-12 lg:grid lg:grid-cols-2 lg:gap-24",
+      "flex flex-col-reverse items-center justify-between gap-12 lg:flex-row lg:gap-40",
   },
 };
 
@@ -33,7 +33,10 @@ export const AboutUs = () => {
           isBlurred
           alt="about us example"
           as={NextImage}
-          className="object-cover"
+          classNames={{
+            wrapper: "!max-w-none w-full",
+            img: "object-cover w-full",
+          }}
           height={400}
           src="/hero/example.jpg"
           width={650}
