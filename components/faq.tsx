@@ -9,6 +9,9 @@ import { siteConfig } from "@/config/site";
 
 const sectionWrapperProps = {
   title: siteConfig.faq.title,
+  classNames: {
+    childrenWrapper: "w-full lg:w-3/4",
+  },
 };
 
 export const Faq = () => {
