@@ -55,13 +55,18 @@ export const ContactForm = () => {
   });
 
   const mutation = useMutation({
-    mutationFn: (data: z.infer<typeof schema>) =>
-      axios.post("/api/send-email", data),
+    mutationFn: (data: z.infer<typeof schema>) => {
+      return axios.post("/api/send-email", data);
+    },
   });
 
   const onSubmit = async (data: z.infer<typeof schema>) => {
-    await mutation.mutateAsync(data);
-    form.reset();
+    try {
+      await mutation.mutateAsync(data);
+      form.reset();
+    } catch (error: any) {
+      console.error(error);
+    }
   };
 
   const getModalMessage = useMemo(() => {
