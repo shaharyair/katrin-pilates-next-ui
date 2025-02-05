@@ -5,6 +5,7 @@
  "scripts": {
   "dev": "next dev --turbo",
   "build": "next build",
+  "postbuild": "next-sitemap",
   "start": "next start",
   "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
  },
@@ -40,6 +41,7 @@
   "framer-motion": "~11.15.0",
   "intl-messageformat": "^10.5.0",
   "next": "14.2.4",
+  "next-sitemap": "^4.2.3",
   "next-themes": "^0.2.1",
   "react": "18.3.1",
   "react-dom": "18.3.1",
