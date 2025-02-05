@@ -8,18 +8,12 @@ import { Providers } from "./providers";
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
 import { fontSans } from "@/config/fonts";
-import { siteConfig } from "@/config/site";
 import { ReactQueryProvider } from "@/providers/reactQueryProvider";
 import { ReduxProvider } from "@/providers/reduxProvider";
 
 const openSans = Open_Sans({ subsets: ["hebrew"], display: "swap" });
 
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
   icons: {
     icon: "/favicon.ico",
   },

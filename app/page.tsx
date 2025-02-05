@@ -10,7 +10,8 @@ import { GridGalleryCarousel } from "@/components/gridGalleryCarousel";
 import { ClassOfferings } from "@/components/classOfferings";
 
 export const metadata: Metadata = {
-  title: "הסטודיו של קאתרין",
+  title: "הסטודיו של קאתרין - דף הבית",
+  description: "הסטודיו של קאתרין הוא סטודיו פילאטיס ויוגה ברמת גן",
 };
 
 export default function Home() {
