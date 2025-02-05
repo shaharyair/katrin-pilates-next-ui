@@ -33,7 +33,7 @@ const ClassOfferingsItem = (
   return (
     <Card
       classNames={{
-        base: "p-4",
+        base: "p-2",
         body: "text-center flex flex-col gap-1",
       }}
     >
