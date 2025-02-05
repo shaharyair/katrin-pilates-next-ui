@@ -3,7 +3,7 @@ import LightboxComponent, {
 } from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import "yet-another-react-lightbox/plugins/counter.css";
-import Counter from "yet-another-react-lightbox/plugins/counter";
+// import Counter from "yet-another-react-lightbox/plugins/counter";
 
 import LightboxNextImage from "./lightboxNextImage";
 
@@ -17,7 +17,7 @@ export default function Lightbox(
   return (
     <LightboxComponent
       noScroll={{ disabled: true }}
-      plugins={[Counter]}
+      // plugins={[Counter]}
       render={{ slide: LightboxNextImage }}
       styles={{
         container: { backgroundColor: "rgba(0, 0, 0, 0.9)" },
