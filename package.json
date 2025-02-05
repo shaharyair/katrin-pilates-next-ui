@@ -9,7 +9,6 @@
   "lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
  },
  "dependencies": {
-  "@hookform/resolvers": "^3.9.1",
   "@heroui/accordion": "2.2.8",
   "@heroui/avatar": "2.2.7",
   "@heroui/button": "2.2.10",
@@ -28,10 +27,13 @@
   "@heroui/switch": "2.2.9",
   "@heroui/system": "2.4.7",
   "@heroui/theme": "2.4.6",
+  "@hookform/resolvers": "^3.9.1",
   "@react-aria/ssr": "3.9.4",
   "@react-aria/visually-hidden": "3.8.12",
   "@reduxjs/toolkit": "^2.5.0",
   "@tanstack/react-query": "^5.62.14",
+  "@upstash/ratelimit": "^2.0.5",
+  "@upstash/redis": "^1.34.3",
   "axios": "^1.7.9",
   "clsx": "2.1.1",
   "embla-carousel-react": "^8.5.2",
