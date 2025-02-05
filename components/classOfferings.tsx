@@ -32,7 +32,6 @@ const ClassOfferingsItem = (
 ) => {
   return (
     <Card
-      isHoverable
       classNames={{
         base: "p-4",
         body: "text-center flex flex-col gap-1",
