@@ -4,7 +4,9 @@ import { siteConfig } from "../../config/site";
 export default function AccessibilityStatement() {
   return (
     <Container className="mt-10 flex flex-col items-start justify-center gap-2">
-      <h1 className="text-xl font-semibold">הצהרת נגישות - סטודיו לכושר</h1>
+      <h1 className="text-xl font-semibold">
+        הצהרת נגישות - הסטודיו של קאתרין
+      </h1>
 
       <p>
         אנו מחויבים להנגשת האתר לכלל המשתמשים, כולל אנשים עם מוגבלויות, בהתאם
