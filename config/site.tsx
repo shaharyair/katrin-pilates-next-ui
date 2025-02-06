@@ -181,7 +181,7 @@ export const siteConfig = {
     },
     {
       label: "הצהרת נגישות",
-      href: "/accessibility-statement",
+      href: "/accessibility",
     },
   ],
   galleryGridImages: [
