@@ -7,6 +7,7 @@ import { Providers } from "./providers";
 
 import { Footer } from "@/components/footer";
 import { Navbar } from "@/components/navbar";
+import UserwayWidget from "@/components/userWay";
 import { fontSans } from "@/config/fonts";
 import { ReactQueryProvider } from "@/providers/reactQueryProvider";
 import { ReduxProvider } from "@/providers/reduxProvider";
@@ -33,7 +34,9 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning dir="rtl" lang="he">
-      <head />
+      <head>
+        <UserwayWidget strategy="beforeInteractive" />
+      </head>
       <body
         className={clsx(
           `bg-background ${openSans.className} antialiased`,
