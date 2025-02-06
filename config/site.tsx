@@ -170,6 +170,20 @@ export const siteConfig = {
       href: "/#contact-us",
     },
   ],
+  legalNavItems: [
+    {
+      label: "מדיניות פרטיות",
+      href: "/privacy-policy",
+    },
+    {
+      label: "תנאי שימוש",
+      href: "/terms-of-service",
+    },
+    {
+      label: "הצהרת נגישות",
+      href: "/accessibility-statement",
+    },
+  ],
   galleryGridImages: [
     [
       {
@@ -400,4 +414,5 @@ export const siteConfig = {
     googleMapsAddress: "https://maps.app.goo.gl/RwgiUnZhJ4KR9czz6",
     phoneNumber: "tel:+972556620441",
   },
+  email: "katrinyair@gmail.com",
 };
